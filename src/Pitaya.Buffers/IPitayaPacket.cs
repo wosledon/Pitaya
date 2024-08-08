@@ -7,6 +7,11 @@
 public interface IPitayaPacket<T>
 {
     /// <summary>
+    /// 源数据
+    /// </summary>
+    public byte[] Origin { get; set; }
+
+    /// <summary>
     /// 编码
     /// </summary>
     /// <param name="writer"></param>

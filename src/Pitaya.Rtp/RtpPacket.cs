@@ -94,6 +94,8 @@ public struct RtpPacket : IPitayaPacket<RtpPacket>, IPitayaAnalyzable
     /// </summary>
     public byte[] Payload { get; set; } = [];
 
+    public byte[] Origin { get; set; } = [];
+
     ///<inheritdoc />
     public void Analyze(ref BufferReader reader, Utf8JsonWriter writer)
     {
@@ -132,6 +134,8 @@ public struct RtpPacket : IPitayaPacket<RtpPacket>, IPitayaAnalyzable
     ///<inheritdoc/>
     public RtpPacket Decode(ref BufferReader reader)
     {
+        Origin = reader.OriginBuffer.ToArray();
+
         var packet = new RtpPacket();
         var header = reader.ReadArray(12);
         packet.V = (Bit2)(header[0] >> 6);

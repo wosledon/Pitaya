@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pitaya.BasicType.Tests", "t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pitaya.Buffers", "src\Pitaya.Buffers\Pitaya.Buffers.csproj", "{B62DEAA3-BA29-40FC-BF3C-09AAA5D42481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pitaya.VideoCodec", "src\Pitaya.VideoCodec\Pitaya.VideoCodec.csproj", "{C2A32DDE-D6E0-4BC6-8528-1709B9F3903C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pitaya.VideoCodec", "src\Pitaya.VideoCodec\Pitaya.VideoCodec.csproj", "{C2A32DDE-D6E0-4BC6-8528-1709B9F3903C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pitaya.NetStream", "src\Pitaya.NetStream\Pitaya.NetStream.csproj", "{B6A30E69-9865-4B0B-8757-A21BC9F654E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pitaya.Core", "src\Pitaya.Core\Pitaya.Core.csproj", "{2DB97279-EC2F-409C-BE89-DA773EFBC2A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{C2A32DDE-D6E0-4BC6-8528-1709B9F3903C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2A32DDE-D6E0-4BC6-8528-1709B9F3903C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2A32DDE-D6E0-4BC6-8528-1709B9F3903C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A30E69-9865-4B0B-8757-A21BC9F654E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A30E69-9865-4B0B-8757-A21BC9F654E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A30E69-9865-4B0B-8757-A21BC9F654E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A30E69-9865-4B0B-8757-A21BC9F654E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB97279-EC2F-409C-BE89-DA773EFBC2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB97279-EC2F-409C-BE89-DA773EFBC2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB97279-EC2F-409C-BE89-DA773EFBC2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB97279-EC2F-409C-BE89-DA773EFBC2A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +81,8 @@ Global
 		{E761A77A-E61E-4DAD-9215-EB4CC427417D} = {E23F5B81-96B6-4CE7-BDCE-F20A15944A23}
 		{B62DEAA3-BA29-40FC-BF3C-09AAA5D42481} = {7FDE088D-F4A2-4A88-8ADC-5E712364B923}
 		{C2A32DDE-D6E0-4BC6-8528-1709B9F3903C} = {7FDE088D-F4A2-4A88-8ADC-5E712364B923}
+		{B6A30E69-9865-4B0B-8757-A21BC9F654E1} = {7FDE088D-F4A2-4A88-8ADC-5E712364B923}
+		{2DB97279-EC2F-409C-BE89-DA773EFBC2A1} = {7FDE088D-F4A2-4A88-8ADC-5E712364B923}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E5DDEE6-A98C-435C-AE78-7B323EF1409A}

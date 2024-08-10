@@ -1,6 +1,6 @@
 ﻿namespace Pitaya.Buffers;
 
-public interface IPitayaPlayloadPacket
+public interface IPitayaPayloadPacket
 {
     public byte[] Origin { get; set; }
 }

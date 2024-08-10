@@ -2,7 +2,7 @@
 
 namespace Pitaya.VideoCodec.Frames;
 
-public struct Vp8Packet : IPitayaPlayloadPacket
+public struct Vp8Packet : IPitayaPayloadPacket
 {
     public Vp8Packet()
     {

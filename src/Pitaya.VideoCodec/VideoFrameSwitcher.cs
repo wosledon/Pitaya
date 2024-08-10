@@ -9,7 +9,7 @@ public class VideoFrameSwitcher
 
     }
 
-    public IPitayaPlayloadPacket Switch(byte[] frame)
+    public IPitayaPayloadPacket Switch(byte[] frame)
     {
         return new H264Packet
         {

@@ -4,7 +4,7 @@ using System.Text.Json;
 
 namespace Pitaya.VideoCodec.Frames;
 
-public struct H264Packet : IPitayaPlayloadPacket, IPitayaPacket<H264Packet>, IPitayaAnalyzable
+public struct H264Packet : IPitayaPayloadPacket, IPitayaPacket<H264Packet>, IPitayaAnalyzable
 {
     public H264Packet()
     {

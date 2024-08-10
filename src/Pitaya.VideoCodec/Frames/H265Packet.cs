@@ -2,7 +2,7 @@
 
 namespace Pitaya.VideoCodec.Frames;
 
-public struct H265Packet : IPitayaPlayloadPacket
+public struct H265Packet : IPitayaPayloadPacket
 {
     public H265Packet()
     {

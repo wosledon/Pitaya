@@ -2,7 +2,7 @@
 
 namespace Pitaya.VideoCodec.Frames;
 
-public struct MpegTsPacket : IPitayaPlayloadPacket
+public struct MpegTsPacket : IPitayaPayloadPacket
 {
     public MpegTsPacket()
     {

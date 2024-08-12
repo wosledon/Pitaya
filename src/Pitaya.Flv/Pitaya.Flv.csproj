@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Pitaya.Buffers\Pitaya.Buffers.csproj" />
+    <ProjectReference Include="..\Pitaya.Core\Pitaya.Core.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

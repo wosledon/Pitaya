@@ -1,6 +1,7 @@
 ﻿using Pitaya.BasicType.BitTypes;
 using Pitaya.Buffers;
 using Pitaya.Buffers.Extensions;
+using Pitaya.Core;
 using System.Text.Json;
 using static System.Net.WebRequestMethods;
 

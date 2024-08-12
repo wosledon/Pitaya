@@ -1,4 +1,5 @@
-﻿using Pitaya.Buffers.Core;
+﻿using Pitaya.Buffers;
+using Pitaya.Buffers.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Pitaya.Buffers;
+namespace Pitaya.Core;
 
 /// <summary>
 /// 提供序列化、反序列化和分析功能的 PitayaConvert 类。

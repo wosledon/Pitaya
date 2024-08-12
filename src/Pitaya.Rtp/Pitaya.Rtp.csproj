@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Pitaya.BasicType\Pitaya.BasicType.csproj" />
     <ProjectReference Include="..\Pitaya.Buffers\Pitaya.Buffers.csproj" />
+    <ProjectReference Include="..\Pitaya.Core\Pitaya.Core.csproj" />
   </ItemGroup>
 
 </Project>

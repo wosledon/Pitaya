@@ -1,4 +1,6 @@
-﻿namespace Pitaya.Buffers;
+﻿using Pitaya.Buffers;
+
+namespace Pitaya.Core;
 
 /// <summary>
 /// PitayaPacket

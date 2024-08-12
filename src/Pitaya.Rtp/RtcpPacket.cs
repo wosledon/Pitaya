@@ -1,4 +1,5 @@
 ﻿using Pitaya.Buffers;
+using Pitaya.Core;
 using System.Text.Json;
 
 namespace Pitaya.Rtp;
@@ -116,6 +117,8 @@ public struct RtcpPacket : IPitayaPacket<RtcpPacket>, IPitayaAnalyzable
     #endregion
 
     #endregion Doc
+
+    public byte[] Origin { get; set; } = [];
 
     /// <summary>
     /// Header

@@ -1,4 +1,4 @@
-﻿namespace Pitaya.Buffers;
+﻿namespace Pitaya.Core;
 
 public interface IPitayaPayloadPacket
 {

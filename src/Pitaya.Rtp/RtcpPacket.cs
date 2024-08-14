@@ -125,15 +125,16 @@ public struct RtcpPacket : IPitayaPacket<RtcpPacket>, IPitayaAnalyzable
     /// </summary>
     public HeaderPacket Header { get; set; } = new();
 
+    public interface IBodyPacket { }
     /// <summary>
     /// Rtcp Body
     /// </summary>
-    public struct BodyPacket { }
+    public struct BodyPacket : IBodyPacket { }
 
     /// <summary>
     /// SR
     /// </summary>
-    public struct SenderReport : BodyPacket
+    public struct SenderReport : IBodyPacket
     {
         public uint SSRC { get; set; }
         public ulong NTP { get; set; }
@@ -145,7 +146,7 @@ public struct RtcpPacket : IPitayaPacket<RtcpPacket>, IPitayaAnalyzable
     /// <summary>
     /// RP
     /// </summary>
-    public struct ReceiverReport : BodyPacket
+    public struct ReceiverReport : IBodyPacket
     {
         public uint SSRC { get; set; }
     }
@@ -153,7 +154,7 @@ public struct RtcpPacket : IPitayaPacket<RtcpPacket>, IPitayaAnalyzable
     /// <summary>
     /// SDES
     /// </summary>
-    public struct SourceDescription : BodyPacket
+    public struct SourceDescription : IBodyPacket
     {
         public uint SSRC { get; set; }
         public string SDES { get; set; }
@@ -162,7 +163,7 @@ public struct RtcpPacket : IPitayaPacket<RtcpPacket>, IPitayaAnalyzable
     /// <summary>
     /// Bye
     /// </summary>
-    public struct Bye : BodyPacket
+    public struct Bye : IBodyPacket
     {
         public uint SSRC { get; set; }
         public string Reason { get; set; }
@@ -171,20 +172,22 @@ public struct RtcpPacket : IPitayaPacket<RtcpPacket>, IPitayaAnalyzable
     /// <summary>
     /// App
     /// </summary>
-    public struct ApplicationSpecific : BodyPacket
+    public struct ApplicationSpecific : IBodyPacket
     {
         public uint SSRC { get; set; }
         public string Name { get; set; }
         public string Data { get; set; }
     }
 
-    public BodyPacket Body { get; set; } = new BodyPacket();
+    public IBodyPacket Body { get; set; } = new BodyPacket();
 
     /// <summary>
     /// RtcpPacket Header
     /// </summary>
     public struct HeaderPacket : IPitayaPacket<HeaderPacket>, IPitayaAnalyzable
     {
+        public byte[] Origin { get; set; }
+
         public void Analyze(ref BufferReader reader, Utf8JsonWriter writer)
         {
             throw new NotImplementedException();

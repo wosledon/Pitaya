@@ -2,11 +2,13 @@
 
 namespace Pitaya.Core;
 
+public interface IPitayaPacket { }
+
 /// <summary>
 /// PitayaPacket
 /// </summary>
 /// <typeparam name="T"></typeparam>
-public interface IPitayaPacket<T>
+public interface IPitayaPacket<T> : IPitayaPacket
 {
     /// <summary>
     /// 源数据
@@ -18,7 +20,7 @@ public interface IPitayaPacket<T>
     /// </summary>
     /// <param name="writer"></param>
     public void Encode(ref BufferWriter writer);
-    
+
     /// <summary>
     /// 解码
     /// </summary>

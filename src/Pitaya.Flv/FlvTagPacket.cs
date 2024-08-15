@@ -5,6 +5,7 @@ using Pitaya.Core;
 
 namespace Pitaya.Flv;
 
+[Obsolete("use tags.", true)]
 public struct FlvTagPacket : IPitayaPacket<FlvTagPacket>, IPitayaAnalyzable
 {
     public FlvTagPacket()

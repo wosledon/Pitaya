@@ -55,4 +55,26 @@ public class RtspClient
 
 public class RtspServer
 {
+    public RtspServer(IPEndPoint iPEndPoint)
+    { }
+
+    public Task StartAsync()
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task StopAsync()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnMessageReceived(Action<string> action)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnError(Action<Exception> action)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -1,4 +1,6 @@
 ﻿using Pitaya.Buffers;
+using Pitaya.Core;
+using Pitaya.VideoCodec.Frames;
 
 namespace Pitaya.VideoCodec;
 
